@@ -3,3 +3,11 @@ server:
 spring:
   application:
     name: eureka-server
+eureka:
+  instance:
+    hostname: local
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultzone: http://localhost:8761
